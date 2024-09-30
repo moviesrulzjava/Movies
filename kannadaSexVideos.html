@@ -13,12 +13,24 @@
   gtag('js', new Date());
   gtag('config', 'G-EJF4FV1WXR');
 </script>
-    
+     <script>
+        function showModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        function redirectToGoogle() {
+            window.location.href = 'https://www.google.com';
+        }
+    </script>
 </head>
 
 
 
-<body>
+<body onload="showModal()>
     <h1>Youtube ADS 18+</h1>
     <div class="video-card">
         <img src="revimg1.jpg" alt="Video Thumbnail 1">
@@ -107,7 +119,15 @@
          <h3>Copy This link and Save any where for daily new videos</h3>
     </div>
     
-  
+     <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3>Youtube Ads By Google</h3>
+            <p>Do you want to continue watching 18+ videos then click OK Button?</p>
+            <button onclick="closeModal()">OK</button>
+            <button onclick="redirectToGoogle()">Close</button>
+        </div>
+    </div>
 
     
     <!-- Repeat the above structure for other video cards -->
