@@ -1,0 +1,111 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #337;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* News post styling */
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.news-post {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.news-content {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+/* Style the video card container */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Style the thumbnail image */
+.video-card img {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the watch button */
+.watch-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff0000; /* Example button color */
+    color: #ffffff; /* Example text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .news-content {
+    font-size: 14px;
+  }
+}
