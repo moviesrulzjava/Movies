@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slam Book</title>
+    <link rel="stylesheet" href="slamstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Slam Book</h1>
+        <form onsubmit="saveData(); return false;">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" name="nickname" placeholder="Your nickname" required>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies</label>
+                <textarea id="hobbies" name="hobbies" placeholder="Your hobbies..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="favorite_songs">Favorite Songs</label>
+                <textarea id="favorite_songs" name="favorite_songs" placeholder="Your favorite songs..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="favorite_movies">Favorite Movies</label>
+                <textarea id="favorite_movies" name="favorite_movies" placeholder="Your favorite movies..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="idea_of_chilling">Your Idea of Chilling Out with Me</label>
+                <textarea id="idea_of_chilling" name="idea_of_chilling" placeholder="Your idea of chilling..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="define_friendship">Define Our Friendship</label>
+                <textarea id="define_friendship" name="define_friendship" placeholder="Define our friendship..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="memorable_experience">Describe Your Most Memorable Experience with Me</label>
+                <textarea id="memorable_experience" name="memorable_experience" placeholder="Describe your experience..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="favorite_gift">A Gift You Like the Most</label>
+                <textarea id="favorite_gift" name="favorite_gift" placeholder="Your favorite gift..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="favoriteColor">Favorite Color</label>
+                <input type="color" id="favoriteColor" name="favoriteColor" required>
+            </div>
+            <div class="form-group">
+                <label for="quote">Favorite Quote</label>
+                <input type="text" id="quote" name="quote" placeholder="Your favorite quote" required>
+            </div>
+            <div class="form-group">
+                <label for="message">A Message for Me</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
