@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive Video Player with Clickable Ads</title>
+    <title>Pushpa 2 final</title>
     <style>
         * {
             margin: 0;
@@ -29,6 +29,7 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             margin: 10px 0;
+            position: relative;
         }
 
         .video-container iframe, 
@@ -49,6 +50,15 @@
 
         .main-video iframe {
             height: 450px; /* Main video is larger */
+        }
+
+        .main-video .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
         }
 
         .ad-video a {
@@ -78,9 +88,10 @@
 
     <!-- Main Video -->
     <div class="video-container main-video">
+        <a href="https://drive.google.com/file/d/1ydIwyToqIgQKRwdWLlBhWQsEjCXf_1FG/view?usp=drive_link" class="overlay-link" target="_blank"></a>
         <div class="video-title">Main Video</div>
         <iframe 
-            src="https://drive.google.com/file/d/FILE_ID_MAIN_VIDEO/preview?autoplay=1" 
+            src="https://miro.medium.com/v2/resize:fit:1200/1*3PWG4m-Sh3wV4hTiWUJxgQ.jpeg" 
             allow="autoplay; encrypted-media" 
             allowfullscreen>
         </iframe>
