@@ -32,13 +32,6 @@
             position: relative;
         }
 
-        .video-container iframe, 
-        .ad-video video {
-            width: 100%;
-            height: 250px;
-            border: none;
-        }
-
         .video-title {
             padding: 10px;
             background: #38383a;
@@ -48,8 +41,11 @@
             font-weight: bold;
         }
 
-        .main-video iframe {
-            height: 450px; /* Main video is larger */
+        .main-video img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         .main-video .overlay-link {
@@ -61,17 +57,19 @@
             z-index: 10;
         }
 
+        .ad-video video {
+            width: 100%;
+            height: 250px;
+            pointer-events: none;
+            border: none;
+        }
+
         .ad-video a {
             display: block;
             width: 100%;
             height: 100%;
-            position: relative;
             overflow: hidden;
             border-radius: 10px;
-        }
-
-        .ad-video video {
-            pointer-events: none; /* Prevent interaction with the video itself */
         }
     </style>
 </head>
@@ -89,12 +87,8 @@
     <!-- Main Video -->
     <div class="video-container main-video">
         <a href="https://drive.google.com/file/d/1ydIwyToqIgQKRwdWLlBhWQsEjCXf_1FG/view?usp=drive_link" class="overlay-link" target="_blank"></a>
-        <div class="video-title">Main Video</div>
-        <iframe 
-            src="Picsart_25-01-02_11-30-54-816.jpg" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-        </iframe>
+        <div class="video-title">Pushpa 2 Click to watch</div>
+        <img src="Picsart_25-01-02_11-30-54-816.jpg" alt="Main Banner Image">
     </div>
 
     <!-- Bottom Ad Video -->
